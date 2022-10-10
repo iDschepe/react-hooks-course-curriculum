@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import PostMetaInfo from './PostMetaInfo'
 
 export default function Comment ({ comment }) {
@@ -10,6 +9,7 @@ export default function Comment ({ comment }) {
         by={comment.by}
         time={comment.time}
         id={comment.id}
+        kids={comment.kids}
       />
       <p dangerouslySetInnerHTML={{__html: comment.text}} />
     </div>
